@@ -1,4 +1,4 @@
-package vboyko.gb.libs.lesson1
+package vboyko.gb.libs.lesson1.User
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -7,12 +7,14 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import moxy.MvpAppCompatFragment
 import moxy.ktx.moxyPresenter
+import vboyko.gb.libs.lesson1.*
 import vboyko.gb.libs.lesson1.databinding.FragmentUsersBinding
 
 class UsersFragment : MvpAppCompatFragment(), UsersView, BackButtonListener {
     companion object {
         fun newInstance() = UsersFragment()
     }
+
 
     val presenter: UsersPresenter by moxyPresenter {
         UsersPresenter(GithubUsersRepo(), App.instance.router)

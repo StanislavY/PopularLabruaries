@@ -1,8 +1,9 @@
-package vboyko.gb.libs.lesson1
+package vboyko.gb.libs.lesson1.User
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import vboyko.gb.libs.lesson1.IUserListPresenter
 import vboyko.gb.libs.lesson1.databinding.ItemUserBinding
 
 class UsersRVAdapter(val presenter: IUserListPresenter) :

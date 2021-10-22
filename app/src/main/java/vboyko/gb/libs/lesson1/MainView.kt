@@ -11,5 +11,11 @@ interface MainView : MvpView
 interface UsersView: MvpView {
     fun init()
     fun updateList()
+
+}
+@StateStrategyType(AddToEndSingleStrategy::class)
+interface SettingsView:MvpView{
+    fun initSettings(text:String)
+
 }
 
